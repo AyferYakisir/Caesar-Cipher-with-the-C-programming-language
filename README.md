@@ -1,20 +1,21 @@
 # Caesar-Cipher-with-the-C-programming-language
 
-This code represents a program that encrypts and decrypts student information. It also prompts for a password to verify the student number.
+This program is a C program that utilizes the Caesar encryption method to encrypt and decrypt a text.
 
-Firstly, the code defines a struct named `Student` that is used to store student information.
+## How It Works
 
-Next, it prompts the user to enter the student name and surname, which are then stored in the "student_information" struct and used for encryption.
+The program takes input from the user for a student's name, surname, and a key value. It encrypts the concatenated student name and surname and prints the encrypted text. It also saves the encrypted text to a file. It then reads the saved file, decrypts the text, and displays the original message.
 
-The `prime` function is used to find the largest factor of a number. In this code, it calculates the largest prime factor of the student number.
+## Usage
 
-The `cipherCaesar` function encrypts a given text using the Caesar cipher method. It shifts each character in the text by a specified key value.
+To run the program, follow these steps:
 
-The `caesarDecrypt` function performs the decryption process for the Caesar cipher. It reverses the shift operation on each character in the encrypted text based on the key value.
+1. Ensure you have a C compiler installed.
+2. Compile and run the `caesar_encryption.c` file.
+3. The program will prompt you to enter a student's name, surname, and a key value.
+4. After entering the student name and surname, you will see the encrypted text on the screen. It will also be saved to a file named `encryptedText.txt`.
+5. The program will read the saved file, display the encrypted text, and decrypt it to obtain the original message.
 
-The main operations are performed within the "main" function. Firstly, it obtains the student information and generates the encrypted text. The encrypted text is then written to the `encryptedText.txt` file.
+## License
 
-Next, it verifies the student number with a password. If the password is correct, it reads the encrypted text from the file, decrypts it, and prints it to the screen.
-
-This code represents a program that performs text encryption and decryption, using the Caesar cipher method, to securely store student information.
-
+This project is licensed under the [MIT License](LICENSE). For more information, please refer to the [LICENSE](LICENSE) file.
